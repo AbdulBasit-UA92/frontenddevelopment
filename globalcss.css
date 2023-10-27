@@ -1,0 +1,273 @@
+body{
+    background-image: linear-gradient(to right, #ffe8ed,#ff9fd2);
+    font-family: 'Times New Roman', Times, serif;   
+    color: black;
+    max-width: 100%;
+    overflow-x: hidden;    
+}
+hr{
+    border: 1px solid black;
+}
+.navbar{
+    background-color: #3f7941;
+    border-radius: 0;
+    height: 100px;   
+    margin-bottom: 0; 
+    position: sticky
+}
+.logo{
+    height: 60px; 
+}
+.nav a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;   
+    font-weight: bolder; 
+    margin-top: 30px;
+}
+.nav a:hover{
+    background-color:#e8ffe9 !important;  
+    color: #3f7941;
+    border: 2px solid #3f7941;
+    border-radius: 15px; 
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    }
+
+.dropdown-menu{
+    background-color: #3f7941;
+}
+
+.dropdown-menu li a{
+    color: white;
+}
+
+.navbar-toggle{
+    background-color: #e8ffe9;
+    margin-top: 30px;
+}
+.cartlogo{
+    width: 120px;
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    cursor: pointer;
+}
+.cartbtn{
+    width: 200px;
+    background-color: #c52457;
+    border-radius: 0%;
+    border:0px;
+    float: left;
+}
+.cart{
+    background-image: url(cartbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cart1{
+    background-image: linear-gradient(to right, #c9f4ff,#ffe8ed);
+}
+.icon-bar{
+    background-color: #3f7941;
+}
+@media only screen and (max-width: 600px) {
+   ul{
+    color: black !important;
+    background-color: #3f7941;
+    position: static;
+   }
+   .dropdown:hover ul{
+        position: relative; 
+   }
+  }
+
+.breadcrumb{
+    background-color: #ffe8ed;
+    border-radius: 0%;
+    border-bottom: 1px solid #3f7941;
+    font-size: medium;
+    padding-left: 5%;
+    margin: 0%;
+}
+
+.bannerdiv{
+    padding: 0;
+}
+
+.banner1{
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+.bannertxt1{
+    text-align: center;
+    padding-top: 13%;
+    font-size: 60px;
+}
+.bannertxt2{
+    text-align: center;
+    font-size: large;
+}
+.bannerbtn1{
+    width: 200px;
+    height: 50px;
+    margin-left: 18%;
+    border-radius: 0;
+    background-color: #3f7941;
+    font-size: medium;
+}
+.bannerbtn2{
+    width: 200px;
+    height: 50px;
+    border-radius: 0;
+    color: #3f7941;
+    background-color: white;
+    font-size: medium;
+}
+.banner2{
+    padding: 0px;
+    float: right;
+    width: 50%;
+}
+.banner{
+    float: right;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bannerdiv{
+        padding: 0;
+    }
+    
+    .banner1{
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .bannertxt1{
+        text-align: center;
+        padding-top: 5%;
+        font-size: 60px;
+    }
+    .bannertxt2{
+        text-align: center;
+        font-size: large;
+    }
+    .bannerbtn1{
+        width: 200px;
+        height: 50px;
+        margin-left: 30%;
+        border-radius: 0;
+        background-color: #3f7941;
+        font-size: medium;
+    }
+    .bannerbtn2{
+        width: 200px;
+        height: 50px;
+        margin-left: 30%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        border-radius: 0;
+        color: #3f7941;
+        background-color: white;
+        font-size: medium;
+    }
+    .banner2{
+        width: 100%;
+    }
+}
+
+.feedback{
+    background-color: rgb(255, 239, 212);
+    text-align: center;
+    border: 2px dashed #3f7941;
+}
+.feedback1{
+    font-weight: bold;
+}
+.feedback2{
+    font-size: larger;
+}
+.collection{
+    margin: 2%;
+}
+.coll{
+    padding: 0%;
+}
+div.coll *{
+    text-decoration: none;
+    color: black;
+}
+.col-img{
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px 6px #a50a6c;
+    transition: 500ms;
+}
+.col-img:hover{
+    height: 250px;
+}
+
+.nar{
+    padding: 0%;
+}
+div.nar *{
+    text-decoration: none;
+    color: black;
+}
+.na-img{
+    height: 350px;
+    box-shadow: 4px 4px 6px 6px #a50a6c, 4px 4px 4px 4px #a50a6c;
+    transition: 500ms;
+}
+.na-img:hover{
+    height: 380px;
+}
+
+.cbtn{
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: black;
+    width: 270px;
+    height: 50px;
+    border-radius: 0%;
+    color: white !important;
+    font-size: larger;
+}
+
+.descrip{
+    margin: 2%;
+}
+.socialicons{
+    width: 30px;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.faq{
+    margin: 2%;
+    font-size: large;
+    cursor: pointer;
+}
+
+.plus{
+    float: right;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.question{
+    font-weight: 700;
+}
+
+.delete{
+    width: 100px;
+    background-color: #3f7941;
+    border: 0px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

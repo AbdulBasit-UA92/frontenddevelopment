@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Petal Picks | Faux & Preserved</title>
+  <link rel="icon" href="icon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="common.js"></script>
+  <link rel="stylesheet" href="globalcss.css">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+  <nav class="navbar navbar-fixed-top" aria-label="Website Navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav" aria-label="Toggle Navigation Menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" class="logo" aria-label="Petal Picks Logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html" aria-label="Home">HOME</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" aria-label="Categories Dropdown">
+          CATEGORIES<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="allplants.html" aria-label="All Plants & Trees">ALL PLANTS & TREES</a></li>
+          <li><a href="petfriendly.html" aria-label="Pet-Friendly Plants">PET-FRIENDLY PLANTS</a></li>
+          <li><a href="decorplants.html" aria-label="Decor Planters">DECOR PLANTERS</a></li>
+          <li><a href="beginners.html" aria-label="For Beginners">FOR BEGINNERS</a></li>
+          <li><a href="flowering.html" aria-label="Flowering Plants">FLOWERING PLANTS</a></li>
+          <li><a href="faux.html" aria-label="Faux & Preserved">FAUX & PRESERVED</a></li>
+        </ul>
+      </li>
+      <li><a href="deals.html" aria-label="Deals">DEALS</a></li>
+      <li><a href="contact.html" aria-label="Contact">CONTACT</a></li>
+    </ul>
+    </div>
+    <a data-toggle="modal" data-target="#cartmodal"><img class="cartlogo" src="cart.png" alt="cart" aria-label="Shopping Cart"></a>
+  </div>
+</nav>
+
+<ul class="breadcrumb">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="faux.html">Faux & Preserved</a></li>
+</ul>
+
+
+
+<div class="collection"><h1>Faux & Preserved</h1><hr></div>
+
+<div class="container-fluid nar">
+    <div class="col-sm-4"><img class="na-img1" src="fauxrubber.png" alt="fauxrubber">
+        <button class="btn btn-success cbtn0" onclick="Cart('Faux Rubber Tree',275.00),alert('Item Added to Cart!')">ADD TO CART</button>
+        <h3>Faux Rubber Tree | £275</h3>
+    </div>
+    <div class="col-sm-4"><img class="na-img1" src="fauxmoney.png" alt="fauxmoney">
+        <button class="btn btn-success cbtn0" onclick="Cart('Faux Braided Money',325.00),alert('Item Added to Cart!')">ADD TO CART</button>
+        <h3>Faux Braided Money Tree | £325</h3>
+    </div>
+    <div class="col-sm-4"><img class="na-img1" src="fauxvariegated.png" alt="fauxvariegated">
+        <button class="btn btn-success cbtn0" onclick="Cart('Faux Variegated Monstera',275.00),alert('Item Added to Cart!')">ADD TO CART</button>
+        <h3>Faux Variegated Monstera | £275</h><br>
+    </div> 
+    <hr><br><br>
+    <div class="col-sm-4"><img class="na-img1" src="fauxpalm.png" alt="fauxpalm">
+        <button class="btn btn-success cbtn0" onclick="Cart('Faux Palm Tree',275.00),alert('Item Added to Cart!')">ADD TO CART</button>
+        <h3>Faux Palm Tree | £275</h3>
+    </div>
+    <div class="col-sm-4"><img class="na-img1" src="fauxfloor.png" alt="fauxfloor">
+        <button class="btn btn-success cbtn0" onclick="Cart('Faux Floor Cactus',325.00),alert('Item Added to Cart!')">ADD TO CART</button>
+        <h3>Faux Floor Cactus | £325</h3>
+    </div>
+    <div class="col-sm-4"><img class="na-img1" src="fauxcactus.png" alt="fauxcactus">
+        <button class="btn btn-success cbtn0" onclick="Cart('Faux Cactus',68.00),alert('Item Added to Cart!')">ADD TO CART</button>
+        <h3>Faux Cactus | £68</h3>
+    </div>
+</div><hr>
+
+<!-- CART MODAL -->
+<div class="container">
+  <div class="modal fade cart" id="cartmodal" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content cart1">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">CART</h4>
+          </div>
+          <div class="modal-body">
+              <ul id="Items"></ul>
+              <p>Total: £<span id="Total">0.00</span></p>
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-success cartbtn" onclick="checkout()">Checkout</button>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="faq">
+    <h2>Live Plants FAQ</h2>
+    <div class="faq1">
+        <hr><p class="question" id="p1">What Are The Best Indoor Plants?
+            <span class="plus" id="plus1">+</span></p>      
+        <p id="p01">
+            The best indoor plant is one that you love the appearance of, that is well-suited to your home 
+            environment, and that you can care for and maintain. There are hundreds of varieties of houseplants 
+            to choose from, so rest assured that you will find one that works for you and your home. 
+        </p>
+
+        <hr><p class="question" id="p2">How Many Houseplants Are Too Many?
+            <span class="plus" id="plus2">+</span></p>      
+        <p id="p02">
+            You can have as many houseplants as you like so long as you have space to put them. It is only when you 
+            cannot take care of them or enjoy them that you know you have too many. Some people prefer to showcase 
+            just a few plants in their home while others have hundreds of indoor plants. 
+        </p>
+
+        <hr><p class="question" id="p3">When Should I Water My Plants?
+            <span class="plus" id="plus3">+</span></p>      
+        <p id="p03">
+            How often you water your houseplants will depend on the type of plant as well as the level of humidity 
+            in the home. Some plants require watering every couple of days, while others can go for two or three 
+            weeks. Generally, plants need to be watered more frequently in the spring and summer.
+        </p><hr>
+    </div>
+</div>
+
+<div class="container-fluid footer">
+  <h1>PETAL PICKS</h1><hr>
+  <p>Copyright 2023 - Petal Picks, Inc.
+    <img class="socialicons" src="facebook.png" alt="facebook">
+    <img class="socialicons" src="printerest.png" alt="printerest">
+    <img class="socialicons" src="youtube.png" alt="youtube">
+    <img class="socialicons" src="twitter.png" alt="twitter"></p>
+</div>
+
+
+</body>
+</html>

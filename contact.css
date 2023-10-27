@@ -1,0 +1,56 @@
+h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+h3{
+    font-weight:bold;
+}
+p{
+    font-size: larger;
+}
+.maindiv{
+margin-top: 3%;
+}
+.div2{
+    margin-top: 2%;
+}
+
+.col-sm-6{
+    padding-left: 2%;
+    padding-right: 6%;
+}
+
+.label{
+    font-size: 20px;
+    color: black;
+    padding: 0%;
+}
+
+.input-lg{
+    width: 400px;
+    border-radius: 0%;
+    border: 1px solid rgb(181, 181, 181);
+}
+
+.btn{
+    width: 400px;
+    color: white;
+    font-size: x-large;
+    border-radius: 0%;
+    background-color: black;
+}
+.btn-default{
+    width: 400px;
+    color: black;
+    font-size: x-large;
+    border-radius: 10px;
+    border: 1px dashed gray;
+}
+
+#attachment{
+    display: none;
+}

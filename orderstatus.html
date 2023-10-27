@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <title>Petal Picks | Shipping & Handling</title>
+  <link rel="icon" href="icon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="common.js"></script>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="globalcss.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+        <span class="icon-bar"></span>                      
+        <span class="icon-bar"></span>                      
+        <span class="icon-bar"></span>                      
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">HOME</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">CATEGORIES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="allplants.html">ALL PLANTS & TREES</a></li>
+          <li><a href="petfriendly.html">PET-FRIENDLY PLANTS</a></li>
+          <li><a href="decorplants.html">DECOR PLANTERS</a></li>
+          <li><a href="beginners.html">FOR BEGINNERS</a></li>
+          <li><a href="flowering.html">FLOWERING PLANTS</a></li>
+          <li><a href="faux.html">FAUX & PRESERVED</a></li>
+        </ul>
+      </li>
+      <li><a href="deals.html">DEALS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    </div>
+    <a data-toggle="modal" data-target="#cartmodal"><img class="cartlogo" src="cart.png" alt="cart"></a>
+  </div>
+</nav>
+
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="orderstatus.html">Shipping & Handling</a></li>
+
+</ul>
+
+<div class="container">
+    <div class="modal fade cart" id="cartmodal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content cart1">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">CART</h4>
+            </div>
+            <div class="modal-body">
+                <ul id="Items"></ul>
+                <p>Total: £<span id="Total">0.00</span></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success cartbtn" onclick="checkout()">Checkout</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid maindiv">
+    <div class="container-fluid col-sm-6">
+        <p style="color: grey;">Shipping and Handling</p>
+        <h1>Happiness delivered.</h1>
+        <img src="guarantee.png" style="width: 200px;">
+    </div>
+
+    <div class="container-fluid col-sm-6 div2">
+        <h2>Standard Processing and Shipping Timelines</h2><hr>
+        <h4><b>What are your shipping rates?</b></h4>
+        <p>We're currently offering free standard shipping on all online orders. There are no minimums
+            that you have to meet to enjoy this perk.</p><hr>
+
+        <h4><b>When can I expect my order?</b></h4>
+        <p>Orders with standard shipping will ship within 2-6 business days. Tracking information will be 
+            automatically sent to your email. Once in transit, packages take 1-4 business days to arrive.</p><hr>
+        
+        <h4><b>What if I need to change my order?</b></h4>
+        <p>If you need to make a change to your order please contact us as soon as possible. 
+            We process orders quickly but will do our best to address your request.</p><hr>
+
+        <h2>Returns and Replacements</h2><hr>
+        <h4><b>What is your refund policy?</b></h4>
+        <p>If your order arrived damaged, <a href="contact.html">let us know</a> within 30 days so we can replace it as 
+            part of our 30-Day Customer Happiness Guarantee.</p><hr>
+    </div>
+</div>
+
+<div class="container-fluid footer">
+    <h1>PETAL PICKS</h1><hr>
+    <p>Copyright 2023 - Petal Picks, Inc.
+      <img class="socialicons" src="facebook.png" alt="facebook">
+      <img class="socialicons" src="printerest.png" alt="printerest">
+      <img class="socialicons" src="youtube.png" alt="youtube">
+      <img class="socialicons" src="twitter.png" alt="twitter"></p>
+  </div>  
+</body>
+</html>

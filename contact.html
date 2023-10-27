@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <title>Petal Picks | Contact Us</title>
+  <link rel="icon" href="icon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="common.js"></script>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="globalcss.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+        <span class="icon-bar"></span>                      
+        <span class="icon-bar"></span>                      
+        <span class="icon-bar"></span>                      
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">HOME</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">CATEGORIES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="allplants.html">ALL PLANTS & TREES</a></li>
+          <li><a href="petfriendly.html">PET-FRIENDLY PLANTS</a></li>
+          <li><a href="decorplants.html">DECOR PLANTERS</a></li>
+          <li><a href="beginners.html">FOR BEGINNERS</a></li>
+          <li><a href="flowering.html">FLOWERING PLANTS</a></li>
+          <li><a href="faux.html">FAUX & PRESERVED</a></li>
+        </ul>
+      </li>
+      <li><a href="deals.html">DEALS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    </div>
+    <a data-toggle="modal" data-target="#cartmodal"><img class="cartlogo" src="cart.png" alt="cart"></a>
+  </div>
+</nav>
+
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<!-- CART MODAL -->
+<div class="container">
+  <div class="modal fade cart" id="cartmodal" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content cart1">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">CART</h4>
+          </div>
+          <div class="modal-body">
+              <ul id="Items"></ul>
+              <p>Total: £<span id="Total">0.00</span></p>
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-success cartbtn" onclick="checkout()">Checkout</button>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid maindiv">
+    <div class="container-fluid col-sm-6">
+        <h1>Get In Touch.</h1>
+        <p>Our team is full of passionate plant parents ready to help. For the fastest reply,
+            fill out this quick form anytime. We respond to each and every message as soon as possible;
+            it may take 2-3 business days for us to get back to you via email.<br><br>
+            In the meantime, here is some information that may answer your question:
+        </p>
+
+        <h3>Order Status Update</h3>
+        <p>Orders with standard shipping ship within 2-6 business days. Orders with express shipping ship within 1-2 business days. 
+            Tracking information is automatically sent to your email. More details about shipping can be found <a href="orderstatus.html">here</a>.
+        </p>
+
+        <h3>30-Day Guarantee</h3>
+        <p>We guarantee your plants will arrive in happy, healthy condition. If not, we replace them for 
+            free as part of our 30-Day Customer Happiness Guarantee. Learn more about our guarantee <a href="guarantee.html">here.</a></p>
+    </div>
+
+    <div class="container-fluid col-sm-6 div2">
+        <h2>Contact Us</h2> <hr>
+        <form method="POST" action="contact.html">
+            <label class="label">Full name:</label><br>
+            <input class="input-lg" type="text" name="fullname"  pattern="[A-Za-z ]{1,255}" required placeholder="Full Name"><br><br><br>
+
+            <label class="label">Email:</label><br>
+            <input class="input-lg" type="email" name="email" placeholder="abc123@xyz.com" required><br><br><br>
+
+            <label class="label">Subject:</label><br>
+            <input class="input-lg" type="text" name="subject" placeholder="Subject" required><br><br><br> 
+
+            <label class="label">Message:</label><br>
+            <textarea class="input-lg" name="message" cols="51" rows="5" placeholder="Type Your Message Here" required></textarea><br><br><br>  
+
+            <button class="btn-default" onclick="document.getElementById('attachment').click()">Attach Files</button>
+            <input type="file" id="attachment"><br><br><br> 
+
+            <button class="btn btn-success" name="submit" onclick="alert('Thank you for Contacting!\n We will be in touch shortly.')  ">Send</button><br><br><br>
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid footer">
+  <h1>PETAL PICKS</h1><hr>
+  <p>Copyright 2023 - Petal Picks, Inc.
+    <img class="socialicons" src="facebook.png" alt="facebook">
+    <img class="socialicons" src="printerest.png" alt="printerest">
+    <img class="socialicons" src="youtube.png" alt="youtube">
+    <img class="socialicons" src="twitter.png" alt="twitter"></p>
+</div>  
+</body>
+</html>

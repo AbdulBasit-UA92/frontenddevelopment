@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Petal Picks | Buy Plants Online</title>
+  <link rel="icon" href="icon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="globalcss.css">
+  <script src="index.js"></script>
+  <script src="common.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-fixed-top" aria-label="Website Navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav" aria-label="Toggle Navigation Menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" class="logo" aria-label="Petal Picks Logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html" aria-label="Home">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" aria-label="Categories Dropdown">
+            CATEGORIES<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="allplants.html" aria-label="All Plants & Trees">ALL PLANTS & TREES</a></li>
+            <li><a href="petfriendly.html" aria-label="Pet-Friendly Plants">PET-FRIENDLY PLANTS</a></li>
+            <li><a href="decorplants.html" aria-label="Decor Planters">DECOR PLANTERS</a></li>
+            <li><a href="beginners.html" aria-label="For Beginners">FOR BEGINNERS</a></li>
+            <li><a href="flowering.html" aria-label="Flowering Plants">FLOWERING PLANTS</a></li>
+            <li><a href="faux.html" aria-label="Faux & Preserved">FAUX & PRESERVED</a></li>
+          </ul>
+        </li>
+        <li><a href="deals.html" aria-label="Deals">DEALS</a></li>
+        <li><a href="contact.html" aria-label="Contact">CONTACT</a></li>
+      </ul>
+      </div>
+      <a data-toggle="modal" data-target="#cartmodal"><img class="cartlogo" src="cart.png" alt="cart" aria-label="Shopping Cart"></a>
+    </div>
+  </nav>
+
+<ul class="breadcrumb">
+  <li><a href="index.html">Home</a></li>
+</ul>
+
+<div class="container-fluid bannerdiv">
+  <div class="banner1">
+    <h1 class="bannertxt1">Bring the <br>Outdoors In.</h1>
+    <p class="bannertxt2">Click 'Add to Cart' on these new arrivals</p>
+    <button class="btn btn-success bannerbtn1" onclick="location.href='allplants.html'">Shop All Plants</button>
+    <button class="btn btn-success bannerbtn2" onclick="location.href='decorplants.html'">Decor Plants</button>
+  </div>
+  <div class="banner2"><img class="banner" src="banner.png" alt="banner"></div>
+</div>
+
+<!-- FEEDBACK -->
+<div class="container-fluid feedback">
+  <h3 class="feedback1">What People Are Saying:</h3><hr>
+  <div class="col-sm-3">
+    <p class="feedback2">The Plants that you sent me are extremely healthy, Thanks!</p>
+    <h4>-Jane P</h4></div>
+  <div class="col-sm-3">
+    <p class="feedback2">The plant arrived in perfect condition in freezing temperatures!</p>
+    <h4>-Jen H</h4></div>
+  <div class="col-sm-3">
+    <p class="feedback2">The plant arrived at my son's house on time and was as BEAUTIFUL as the photo.</p>
+    <h4>-Randy C</h4></div>
+    <div class="col-sm-3">
+      <p class="feedback2">Packaging was excellent! Plant is a joy</p>
+      <h4>-Mark B</h4></div>
+  </div>
+
+<!-- COLLECTION -->
+<div class="collection"><hr><h1>Shop by Collection</h1><hr></div>
+
+<div class="container-fluid coll">
+  <div class="col-sm-2"><a href="allplants.html"><img class="col-img" src="allplants.png" alt="allplants">
+    <h3>All Plants & Trees</h3></a>
+  </div>
+  <div class="col-sm-2"><a href="petfriendly.html"><img class="col-img" src="petfriendly.png" alt="petfriendly">
+    <h3>Pet Friendly Plants</h3></a>
+  </div>
+  <div class="col-sm-2"><a href="decorplants.html"><img class="col-img" src="decorplants.png" alt="decorplants">
+    <h3>Decor Plants</h3></a>
+  </div>
+  <div class="col-sm-2"><a href="beginners.html"><img class="col-img" src="beginnersplants.png" alt="beginnersplants">
+    <h3>For Beginners</h3></a>
+  </div>
+  <div class="col-sm-2"><a href="flowering.html"><img class="col-img" src="floweringplants.png" alt="floweringplants">
+    <h3>Flowering Plants</h3></a>
+  </div>
+  <div class="col-sm-2"><a href="faux.html"><img class="col-img" src="fauxpreservedplants.png" alt="fauxpreservedplants">
+    <h3>Faux & Preserved</h3></a>
+  </div>
+
+</div>
+
+<!-- NEW ARRIVALS -->
+<div class="collection"><hr><h1>New Arrivals</h1><hr></div>
+
+<div class="container-fluid nar">
+  <div class="col-sm-3 hv1"><img class="na-img" src="peperomia.png" alt="peperomia">
+    <button class="btn btn-success cbtn cbtn1" onclick="Cart('Peperomia Obtusifolia',74.00),alert('Item Added to Cart!')">ADD TO CART</button>
+    <h3>Peperomia Obtusifolia | £74</h3>
+  </div>
+  <div class="col-sm-3 hv2"><img class="na-img" src="largeolivetree.png" alt="largeolivetree">
+    <button class="btn btn-success cbtn cbtn2" onclick="Cart('Large Olive Tree',140.00),alert('Item Added to Cart!')">ADD TO CART</button>
+    <h3>Large Olive Tree | £140</h3>
+  </div>
+  <div class="col-sm-3 hv3"><img class="na-img" src="largerubbertree.png" alt="largerubbertree">
+    <button class="btn btn-success cbtn cbtn3" onclick="Cart('Large Rubber Tree',98.00),alert('Item Added to Cart!')">ADD TO CART</button>
+    <h3>Large Rubber Tree | £98</h3>
+  </div>
+  <div class="col-sm-3 hv4"><img class="na-img" src="largesagopalm.png" alt="largesagopalm">
+    <button class="btn btn-success cbtn cbtn4" onclick="Cart('Large Sago Palm',98.00),alert('Item Added to Cart!')">ADD TO CART</button>
+    <h3>Large Sago Palm | £98</h3>
+  </div>
+</div><hr>
+
+<!-- CART MODAL -->
+<div class="container">
+  <div class="modal fade cart" id="cartmodal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content cart1">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">CART</h4>
+        </div>
+        <div class="modal-body">
+            <ul id="Items"></ul>
+            <p>Total: £<span id="Total">0.00</span></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success cartbtn" onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+<div class="container-fluid descrip">
+  <div class="col-sm-4"><img src="shipping.png" alt="shipping">
+    <h2>Free Standard <br>Shipping</h2>
+    <h4>Enjoy free standard shipping on all plants and planters. Orders are shipped via UPS carbon neutral shipping, keeping our carbon footprint as small as possible.</h4>
+  </div>
+  <div class="col-sm-4"><img style="width: 60px;" src="customer.png" alt="shipping">
+    <h2>30-Day Customer <br>Happiness Guarantee</h2>
+    <h4>Our team preps, prunes, & carefully packs every order—meaning lots of care goes into every step. If your plant arrives damaged or unhealthy, we replace it for free.</h4>
+  </div>
+  <div class="col-sm-4"><img src="localstores.png" alt="shipping">
+    <h2>Local Stores</h2>
+    <h4>Want hands-on plant expertise IRL? Stop by one of our stores in the UK to explore more plants, planters, & care accessories.</h4>
+  </div>
+</div>
+<div class="container-fluid footer">
+  <h1>PETAL PICKS</h1><hr>
+  <p>Copyright 2023 - Petal Picks, Inc.
+  <img class="socialicons" src="facebook.png" alt="facebook">
+  <img class="socialicons" src="printerest.png" alt="printerest">
+  <img class="socialicons" src="youtube.png" alt="youtube">
+  <img class="socialicons" src="twitter.png" alt="twitter"></p>
+</div>  
+
+</body>
+</html>
